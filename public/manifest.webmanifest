@@ -1,0 +1,13 @@
+{
+  "name": "ColourBook Studio AI",
+  "short_name": "ColourBook",
+  "description": "Create printable AI colouring books.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6C4CF1",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

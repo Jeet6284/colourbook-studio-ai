@@ -1,0 +1,21 @@
+{
+  "name": "colourbook-studio-desktop",
+  "version": "1.0.0",
+  "description": "Windows desktop wrapper for ColourBook Studio AI",
+  "main": "main.js",
+  "author": "ColourBook Studio",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis portable --x64"
+  },
+  "devDependencies": { "electron": "^33.0.0", "electron-builder": "^25.1.8" },
+  "build": {
+    "appId": "app.colourbook.studio",
+    "productName": "ColourBook Studio AI",
+    "files": ["main.js", "app-url.txt", "icon.png"],
+    "win": { "icon": "icon.png", "target": ["nsis", "portable"] },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true },
+    "artifactName": "ColourBook-Studio-AI-${version}-${arch}.${ext}"
+  }
+}
